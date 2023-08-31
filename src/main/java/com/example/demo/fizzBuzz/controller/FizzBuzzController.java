@@ -22,7 +22,7 @@ public class FizzBuzzController {
 
 //		result = String.valueOf();
 		
-		model.addAttribute("result", List);
+		model.addAttribute("result", fizzBuzzService.createFizzBuzz());
 
 		return "fizzBuzz.html";
 	}

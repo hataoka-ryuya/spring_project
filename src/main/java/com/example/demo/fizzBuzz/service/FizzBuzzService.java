@@ -10,8 +10,8 @@ public class FizzBuzzService {
 	
 //	public static void fizzBuzzService() {
 		
-		public List<string> createFizzBuzz() {
-			List<string> result = new ArrayList<>();
+		public List<String> createFizzBuzz() {
+			List<String> result = new ArrayList<>();
 		
 			for (int i = 0; i <= 100; i++) {
 				if (i % 3 == 0 && i % 5 == 0) {
@@ -21,7 +21,7 @@ public class FizzBuzzService {
 				} else if (i % 5 == 0) {
 					result.add("Buzz");
 				} else {
-					result.add(i);
+					result.add(String.valueOf(i));
 				}
 			}
 //		}
