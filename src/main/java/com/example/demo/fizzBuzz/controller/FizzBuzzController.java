@@ -1,13 +1,15 @@
-package com.example.demo.fizzBuzz;
+package com.example.demo.fizzBuzz.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import com.example.demo.fizzBuzz.service.FizzBuzzService;
+
 @Controller
 public class FizzBuzzController {
 
-	private final FizzBuzzController fizzBuzzService;
+	private final FizzBuzzService fizzBuzzService;
 
 	public FizzBuzzController(FizzBuzzService fizzBuzzService) {
 		this.fizzBuzzService = fizzBuzzService;
@@ -16,11 +18,11 @@ public class FizzBuzzController {
 	@GetMapping("fizzBuzz")
 	public String fizzBuzz(Model model) {
 
-		String result = "";
+//		String result = "";
 
-//		result = String.valueOf(multiService.multi(5, 6));
-
-		model.addAttribute("result", list);
+//		result = String.valueOf();
+		
+		model.addAttribute("result", List);
 
 		return "fizzBuzz.html";
 	}
