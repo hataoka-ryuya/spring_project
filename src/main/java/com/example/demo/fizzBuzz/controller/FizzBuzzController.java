@@ -18,14 +18,13 @@ public class FizzBuzzController {
 	@GetMapping("fizzBuzz")
 	public String fizzBuzz(Model model) {
 
-//		String result = "";
+		//		String result = "";
 
-//		result = String.valueOf();
-		
+		//		result = String.valueOf();
+
 		model.addAttribute("result", fizzBuzzService.createFizzBuzz());
 
 		return "fizzBuzz.html";
 	}
 
 }
-
