@@ -9,7 +9,7 @@
 <body>
 	<h1>動物詳細画面</h1>
 	<div class="animals" style="list-style: none;">
-		<div class="animals__lists" th:each="animal : ${matchingAnimalsList}">
+		<div class="animals__lists" style="margin-left: 40px;" th:each="animal : ${matchingAnimalsList}">
 			<p class="animal__details" th:text="No： + ${animal.id}"></p>
 			<p class="animal__details" th:text="英名： + ${animal.name}"></p>
 			<p class="animal__details" th:text="和名： + ${animal.japaneseName}"></p>
