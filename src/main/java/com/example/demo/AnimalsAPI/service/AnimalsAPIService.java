@@ -27,9 +27,9 @@ public class AnimalsAPIService {
 
 	}
 
-	public List<AnimalsAPIData> getSelectedAnimalsAPIData(String animalid) throws IOException {
+	public List<AnimalsAPIData> getSelectedAnimalsAPIData(String animalId) throws IOException {
 
-		AnimalsAPIData[] matchingAnimalsList = animalsAPIRepository.getSelectedAnimalsAPIData(animalid);
+		AnimalsAPIData[] matchingAnimalsList = animalsAPIRepository.getSelectedAnimalsAPIData(animalId);
 
 		return Arrays.asList(matchingAnimalsList);
 
