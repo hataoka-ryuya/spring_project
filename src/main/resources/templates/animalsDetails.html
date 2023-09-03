@@ -8,14 +8,14 @@
 
 <body>
 	<h1>動物詳細画面</h1>
-	<ul style="list-style: none;">
-		<li th:each="animal : ${matchingAnimalsList}">
-			<p th:text="No： + ${animal.id}"></p>
-			<p th:text="英名： + ${animal.name}"></p>
-			<p th:text="和名： + ${animal.japaneseName}"></p>
-			<p th:text="鳴き声： + ${animal.cry}"></p>
-		</li>
-	</ul>
+	<div class="animals" style="list-style: none;">
+		<div class="animals__lists" th:each="animal : ${matchingAnimalsList}">
+			<p class="animal__details" th:text="No： + ${animal.id}"></p>
+			<p class="animal__details" th:text="英名： + ${animal.name}"></p>
+			<p class="animal__details" th:text="和名： + ${animal.japaneseName}"></p>
+			<p class="animal__details" th:text="鳴き声： + ${animal.cry}"></p>
+		</div>
+	</div>
 	<form action=animalsSearch method="get">
 		<button type="submit">トップへ</button>
 	</form>

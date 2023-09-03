@@ -33,9 +33,9 @@ public class AnimalsAPIController {
 	}
 
 	@GetMapping("animalsDetails")
-	public String animalDetails(@RequestParam("animals") String animals, Model model) throws IOException {
+	public String animalDetails(@RequestParam("animalid") String animalid, Model model) throws IOException {
 
-		List<AnimalsAPIData> matchingAnimalsList = animalsAPIService.getSelectedAnimalsAPIData(animals);
+		List<AnimalsAPIData> matchingAnimalsList = animalsAPIService.getSelectedAnimalsAPIData(animalid);
 
 		model.addAttribute("matchingAnimalsList", matchingAnimalsList);
 
